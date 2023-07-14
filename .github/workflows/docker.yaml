@@ -5,9 +5,8 @@ on:
     branches: [main]
 
 jobs:
-  test:
-    name: Test calculator
-
+  # test:
+  #   name: Test calculator
   docker:
     runs-on: "macos-latest"
     steps:
