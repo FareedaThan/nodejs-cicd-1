@@ -1,12 +1,15 @@
 name: Test workflows
+run-name: Test docker
 
 on:
   push:
     branches: [main]
 
 jobs:
-  # test:
-  #   name: Test calculator
+  test:
+    name: Running test workflow
+    uses: .github/workflows/demo.yaml
+
   docker:
     name: Test docker
     runs-on: "ubuntu-latest"
