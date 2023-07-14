@@ -8,7 +8,7 @@ on:
 jobs:
   test:
     name: Running test workflow
-    uses: .github/workflows/demo.yaml
+    uses: ./.github/workflows/demo.yaml
 
   docker:
     name: Test docker
@@ -29,4 +29,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/clockbox:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/nodejs-cicd:latest
